@@ -3,10 +3,10 @@ import torch.nn as nn
 from torch.nn.utils.rnn import pad_sequence
 from timeit import default_timer as timer
 import typing
-from ainuseq23.seq2seq_transformer_model import Seq2SeqTransformer, DEVICE
-from ainuseq23.tokenizer.ainu_tokenizer import special_tokens
-from ainuseq23.seq2seq_transformer_model import DEVICE, Seq2SeqTransformer
-from ainuseq23.ainu_dataset import Ainu_JSON_MLM_Dataset
+from models.seq2seq_transformer_model import Seq2SeqTransformer, DEVICE
+from models.tokenizer.ainu_tokenizer import special_tokens
+from models.seq2seq_transformer_model import DEVICE, Seq2SeqTransformer
+from models.ainu_dataset import Ainu_JSON_MLM_Dataset
 import datetime
 from torch.utils.data import DataLoader
 NUM_EPOCHS = 1200

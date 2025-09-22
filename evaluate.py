@@ -3,9 +3,9 @@ import json
 import torch
 import torch.nn as nn
 from torch.nn.utils.rnn import pad_sequence
-from ainuseq23.seq2seq_transformer_model import DEVICE, Seq2SeqTransformer
-from ainuseq23.ainu_dataset import AINU_VOCAB_HEAD_SIZE, Ainu_JSON_MLM_Dataset
-from ainuseq23.tokenizer.ainu_tokenizer import Tokenizer, special_tokens
+from models.seq2seq_transformer_model import DEVICE, Seq2SeqTransformer
+from models.ainu_dataset import AINU_VOCAB_HEAD_SIZE, Ainu_JSON_MLM_Dataset
+from models.tokenizer.ainu_tokenizer import Tokenizer, special_tokens
 from torch.utils.data import DataLoader
 import typing
 import sentencepiece as spm
